@@ -1,0 +1,30 @@
+/* Definir o estilo básico do emoji */
+.App-emoji {
+  width: 50vh;
+  height: 50vh;
+}
+
+/* Adicionar a animação */
+@keyframes animate-emoji {
+  0% {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: rotate(10deg) translateX(5px) translateY(-5px);
+  }
+  50% {
+    transform: rotate(-10deg) translateX(-5px) translateY(5px);
+  }
+  75% {
+    transform: rotate(5deg) translateX(3px) translateY(-3px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+}
+
+.App-emoji:hover {
+  animation-name: animate-emoji;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
