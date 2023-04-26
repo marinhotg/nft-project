@@ -1,6 +1,7 @@
 {
   "name": "aula-nft",
   "version": "0.1.0",
+  "homepage": "https://marinhotg.github.io/nft-project",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -11,9 +12,12 @@
   "devDependencies": {
     "@types/node": "^16.18.24",
     "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11"
+    "@types/react-dom": "^18.0.11",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
